@@ -1,3 +1,26 @@
+/* Styling for upload button and checkbox circle */
+.upload-button {
+  display: block;
+  margin: 10px auto; /* Center the button horizontally */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333; /* Adjust background color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add hover effect */
+}
+
+.upload-button:hover {
+  background-color: #444; /* Change background color on hover */
+}
+
+.inp-cbx {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Make the checkbox a circle */
+}
+
 .form {
   display: flex;
   flex-direction: column;
