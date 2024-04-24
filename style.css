@@ -1,286 +1,258 @@
-/* Styling for upload button and checkbox circle */
-.upload-button {
-  display: block;
-  margin: 10px auto; /* Center the button horizontally */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333; /* Adjust background color */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Add hover effect */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
-.upload-button:hover {
-  background-color: #444; /* Change background color on hover */
+body{
+    height: 100vh;
+    background-color: #171e31;
 }
 
-.inp-cbx {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%; /* Make the checkbox a circle */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    /* padding: 10px 14px; */
+    background: #20283F;
 }
 
-.form {
+.appname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-bottom: 2px solid #257EEB;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.header-text{
+    font-family: 'Poppins' sans-serif;
+    color: white;
+}
+
+.sidebar li{
+    padding: 10px 18px;
+    height: 50px;
+    /* background: red; */
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.search-box{
+    padding-left: 10px;
+    height: 33px;
+    border: none;
+    width: 200px;
+    background-color: #1f589f;
+    border-radius: 12px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.bx-search-alt{
+    color: white;
+    position: absolute;
+    left: 190px;
+    top: 67px
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.btns{
+    margin-top: 15px;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    width: 250px;
+    height: 40px;
+    /* background-color: #257EEB; */
+}
+
+.btns:hover{
+    background-color: #257EEB;
+}
+
+.dashboard{
+    display: block;
+    position: relative;
+    left: 260px;
+    top: 2%;
+    height: 96vh;
+    width: 78vw;
+    /* background-color: green; */
+}
+
+.dashboard header{
+    position: relative;
+    color: white;
+    left: 9px;
+}
+
+
+.request_box{
+  .background-box {
+  background-color: #f0f0f0; /* Background color of the box */
+  width: 90vw; /* 90% of the viewport width */
+  max-width: 1000px; /* Maximum width of the box */
+  margin: 0 auto; /* Center the box horizontally */
+  padding: 20px; /* Padding inside the box */
+  box-sizing: border-box; /* Include padding in the box size */
+  border-radius: 10px;  
+  background-color: #20283F;  
+}
+
+.request_box header{
+    position: relative;
+    top:8px;
+    left: 10px;
+    color: rgb(213, 212, 212);
+    font-size: 15px;
+}
+
+.request_box a{
+    position: relative;
+    top: -15px;
+    left: 785px;
+    text-decoration: none;
+    color: rgb(213, 212, 212);
+}
+
+.request_list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.request_list{
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.request_list li{
+    list-style: none;
+}
+
+.users{
+    background-color: #1f589f;
+    height: 10vh;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    border: 2px solid #20283F;
+    border-radius: 10px;
+}
+
+.user-img img{
+    position: relative;
+    left: 16px;
+    top: 2px;
+    height: 42px;
+    width: 42px;
+    border-radius: 8px;
+}
+
+.info{
+    color: white;
+    position: relative;
+    left: 50px;
+}
+
+.profile-btn button{
+    position: relative;
+    left: 550px;
+    background-color: #20283F;
+    color: white;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------- */
+/*                             card section                            */
+/* --------------------------------------------------------------------*/
+
+.card {
+/*  width: 390px; */
+ height: 254px;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 1.8rem;
+ border: 3px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ width: calc(35% - 30px); /* Adjust card width as needed */
+ margin-bottom: 40px; /* Space between rows */ 
+}
+
+.card-details {
+ color: black;
+ height: 100%;
+ gap: .5em;
+ display: grid;
+ place-content: center;
+/*  border: 1px solid #ccc; Example border style */
+ padding: 10px;
+}
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+ cursor: pointer;
+}
+
+.text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: #008bf8;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+.card-container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 350px;
-  padding: 20px;
-  border-radius: 20px;
-  position: relative;
-  background-color: #1a1a1a;
-  color: #fff;
-  border: 1px solid #333;
-}
-
-.form label:not(.flex label) {
-  margin-bottom: 10px; /* Add space between non-flex labels */
-}
-
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Set full viewport height */
-}
-
-.title {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-  color: #00bfff;
-}
-
-.title::before,
-.title::after {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  left: 0px;
-  background-color: #00bfff;
-}
-
-.title::before {
-  width: 18px;
-  height: 18px;
-}
-
-.title::after {
-  width: 18px;
-  height: 18px;
-  animation: pulse 1s linear infinite;
-}
-
-.message,
-.signin {
-  font-size: 14.5px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.signin {
-  text-align: center;
-}
-
-.signin a:hover {
-  text-decoration: underline royalblue;
-}
-
-.signin a {
-  color: #00bfff;
-}
-
-.flex {
-  display: flex;
-  width: 100%;
-  gap: 6px;
-}
-
-.form label {
-  position: relative;
-}
-
-.form label .input {
-  background-color: #333;
-  color: #fff;
-  width: 100%;
-  padding: 20px 05px 05px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 10px;
-}
-
-.form label .input + span {
-  color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input:placeholder-shown + span {
-  top: 12.5px;
-  font-size: 0.9em;
-}
-
-.form label .input:focus + span,
-.form label .input:valid + span {
-  color: #00bfff;
-  top: 0px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-.input {
-  font-size: medium;
-}
-
-.button {
-  position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
-  border-radius: 1.5rem;
-  background: #3d3a4e;
-  background-size: 400%;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-}
-
-.button-content {
-  position: relative;
-  z-index: 1;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
-  height: inherit;
-  border-radius: inherit;
-  background: linear-gradient(
-    82.3deg,
-    rgba(150, 93, 233, 1) 10.8%,
-    rgba(99, 88, 238, 1) 94.3%
-  );
-  transition: all 0.475s;
-}
-
-
-.button-content {
-  position: relative
-}
-
-.checkbox-wrapper input[type="checkbox"] {  /* Modified selector to encompass all wrappers */
-display: none;
-visibility: hidden;
-}
-
-.checkbox-wrapper .cbx {  /* Modified selector */
-margin: auto;
--webkit-user-select: none;
-user-select: none;
-cursor: pointer;
-}
-
-.checkbox-wrapper .cbx span {  /* Modified selector */
-display: inline-block;
-vertical-align: middle;
-transform: translate3d(0, 0, 0);
-}
-
-.checkbox-wrapper .cbx span:first-child {  /* Modified selector */
-position: relative;
-width: 18px;
-height: 18px;
-border-radius: 3px;
-transform: scale(1);
-vertical-align: middle;
-border: 1px solid #9098a9;
-transition: all 0.2s ease;
-}
-
-.checkbox-wrapper .cbx span:first-child svg {  /* Modified selector */
-position: absolute;
-top: 3px;
-left: 2px;
-fill: none;
-stroke: #ffffff;
-stroke-width: 2;
-stroke-linecap: round;
-stroke-linejoin: round;
-stroke-dasharray: 16px;
-stroke-dashoffset: 16px;
-transition: all 0.3s ease;
-transition-delay: 0.1s;
-transform: translate3d(0, 0, 0);
-}
-
-.checkbox-wrapper .cbx span:first-child:before {  /* Modified selector */
-content: "";
-width: 100%;
-height: 100%;
-background: #506eec;
-display: block;
-transform: scale(0);
-opacity: 1;
-border-radius: 50%;
-}
-
-.checkbox-wrapper .cbx span:last-child {  /* Modified selector */
-padding-left: 8px;
-}
-
-.checkbox-wrapper .cbx:hover span:first-child {  /* Modified selector */
-border-color: #506eec;
-}
-
-/* Simplified animation application for all checked checkboxes */
-.checkbox-wrapper input[type="checkbox"]:checked + .cbx span:first-child {  /* Modified selector */
-background: #506eec;
-border-color: #506eec;
-transform: scale(0.9);  /* 50% keyframe animation directly applied */
-transition: transform 0.4s ease;
-}
-
-.checkbox-wrapper input[type="checkbox"]:checked + .cbx span:first-child svg {  /* Modified selector */
-stroke-dashoffset: 0;
-}
-
-.checkbox-wrapper input[type="checkbox"]:checked + .cbx span:first-child:before {  /* Modified selector */
-transform: scale(3.5);
-opacity: 0;
-transition: all 0.6s ease;
-}
-
-.checkbox-container {
-display: flex; /* Make the container a flexbox */
-flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-margin: 0; /* Remove default margin */
-padding: 0; /* Remove default padding */
-}
-
-.checkbox-wrapper {
-margin: 4px; /* Apply 2px margin to each checkbox wrapper */
-}
-
-.checkbox-wrapper .cbx {
-/* Existing styles for checkbox appearance */
+  justify-content: space-between; /* Adjust as needed */
+  flex-wrap: wrap; /* Wrap cards to next line if not enough space */
 }
